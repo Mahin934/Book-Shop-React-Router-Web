@@ -13,7 +13,6 @@ const ListedBooks = () => {
         const storedReadList = getStorReadList();
         const storedReadListInt = storedReadList.map(id => parseInt(id));
 
-        console.log(storedReadList, storedReadListInt, allBooks);
 
         const readBookList = allBooks.filter(book => storedReadListInt.includes(book.bookId));
         setReadList(readBookList);
